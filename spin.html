@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spinner Sections</title>
+    <link rel="stylesheet" href="spin.css">
+</head>
+<body>
+    <div class="section success">
+        <h2>Success:</h2>
+        <div class="spinner green"></div>
+        <p>Loading video in 5 seconds..</p>
+        <div class="video-container" id="success-video" style="display:none;">
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/lyluZxaVGzM" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="section warning">
+        <h2>Warning:</h2>
+        <div class="spinner yellow"></div>
+        <p>Loading video in 10 seconds..</p>
+        <div class="video-container" id="warning-video" style="display:none;">
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/q8LIO8TNYs4" frameborder="0.9" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="section danger">
+        <h2>Danger sign:</h2>
+        <div class="spinner red"></div>
+        <p>Loading video in 15 seconds..</p>
+        <div class="video-container" id="danger-video" style="display:none;">
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/5UsRiPOFLjk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('success-video').style.display = 'block';
+        }, 5000);
+
+        setTimeout(function() {
+            document.getElementById('warning-video').style.display = 'block';
+        }, 10000);
+
+        setTimeout(function() {
+            document.getElementById('danger-video').style.display = 'block';
+        }, 15000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 40px;
+}
+.section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-bottom: 32px;
+    padding: 24px;
+    max-width: 400px;
+}
+.spinner {
+    margin: 16px 0;
+    width: 48px;
+    height: 48px; 
+    border: 6px solid #eee;
+    border-radius: 50%;
+    border-top: 6px solid;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+.spinner.green { border-top-color: #28a745; }
+.spinner.yellow { border-top-color: #ffc107; }
+.spinner.red { border-top-color: #dc3545; }
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+.success { border-left: 6px solid #28a745; }
+.warning { border-left: 6px solid #ffc107; }
+.danger { border-left: 6px solid #dc3545; }

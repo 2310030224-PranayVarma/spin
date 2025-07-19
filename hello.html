@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pranay Nampally – Portfolio Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 32px;
+            background: #f8f9fa;
+            color: #222;
+            transition: background 0.3s, color 0.3s;
+        }
+        body.dark {
+            background: #181a1b;
+            color: #eee;
+        }
+        header {
+            margin-bottom: 24px;
+        }
+        h1, h2 {
+            color: #2d6cdf;
+        }
+        body.dark h1, body.dark h2 {
+            color: #90caf9;
+        }
+        section {
+            margin-bottom: 24px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: background 0.3s, color 0.3s;
+        }
+        body.dark section {
+            background: #23272a;
+            color: #eee;
+        }
+        ul, table {
+            margin-top: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 6px 10px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+        body.dark th, body.dark td {
+            border-bottom: 1px solid #444;
+        }
+        .links a {
+            margin-right: 16px;
+            color: #2d6cdf;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        body.dark .links a {
+            color: #90caf9;
+        }
+        .toggle-btn {
+            float: right;
+            margin-top: 8px;
+            padding: 6px 16px;
+            background: #2d6cdf;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .toggle-btn:hover {
+            background: #174ea6;
+        }
+        .collapsible {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.1em;
+            color: inherit;
+            margin-bottom: 8px;
+            text-align: left;
+            width: 100%;
+            padding: 0;
+        }
+        .collapsible:after {
+            content: ' ▼';
+            font-size: 0.9em;
+        }
+        .collapsible.active:after {
+            content: ' ▲';
+        }
+        .content {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+        .content.show {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .project-item {
+            transition: background 0.2s;
+            border-radius: 6px;
+            padding: 8px;
+        }
+        .project-item:hover {
+            background: #e3f2fd;
+        }
+        body.dark .project-item:hover {
+            background: #263238;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pranay Nampally</h1>
+        <button class="toggle-btn" id="themeToggle">Toggle Theme</button>
+        <p>Computer Science Undergraduate | AI &amp; Automation Enthusiast | Passionate Developer</p>
+    </header>
+
+    <section>
+        <button class="collapsible">About Me</button>
+        <div class="content show">
+            <p>
+                I am Pranay Nampally, an aspiring software engineer and computer science student at KL University, Hyderabad.
+                I specialize in building intelligent applications using Python and automation tools, with strong interests in machine learning, prompt engineering, and system-level programming.
+                I actively pursue technical certifications and apply my learning through practical, real-world projects.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <button class="collapsible">Core Skills</button>
+        <div class="content show">
+            <ul>
+                <li><strong>Languages &amp; Tools:</strong> Python, C, Git, MongoDB, HTML/CSS</li>
+                <li><strong>Specializations:</strong> Machine Learning, Prompt Engineering, Automation, Data Structures</li>
+                <li><strong>Other Skills:</strong> API Integration, GUI Development, GitHub Workflow</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <button class="collapsible">Certifications</button>
+        <div class="content show">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Certification</th>
+                        <th>Issuer</th>
+                        <th>Date</th>
+                        <th>Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Building LLM Applications with Prompt Engineering</td>
+                        <td>NVIDIA</td>
+                        <td>May 2025</td>
+                        <td>Prompt Design, AI Application Development</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Networks and Internet Protocols</td>
+                        <td>NPTEL</td>
+                        <td>May 2025</td>
+                        <td>Network Protocols, OSI Layers</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub Foundations (Valid till 2028)</td>
+                        <td>GitHub</td>
+                        <td>May 2025</td>
+                        <td>Git, GitHub Workflow</td>
+                    </tr>
+                    <tr>
+                        <td>Essentials Automation Certification</td>
+                        <td>Automation Anywhere</td>
+                        <td>Jan 2025</td>
+                        <td>RPA, Process Automation</td>
+                    </tr>
+                    <tr>
+                        <td>MongoDB Associate Developer (Python)</td>
+                        <td>MongoDB</td>
+                        <td>Nov 2024</td>
+                        <td>MongoDB Operations, Python Integration</td>
+                    </tr>
+                    <tr>
+                        <td>LINGUASKILL (English Proficiency)</td>
+                        <td>Cambridge</td>
+                        <td>May 2024</td>
+                        <td>CEFR-Level English Skills</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <button class="collapsible">Highlighted Projects</button>
+        <div class="content show">
+            <ul>
+                <li class="project-item">
+                    <strong>Gender Detection System with GUI:</strong>
+                    <br>
+                    A machine learning-powered desktop application that detects gender from images using facial features. Built using Python, OpenCV, and Tkinter for a user-friendly GUI.
+                </li>
+                <li class="project-item">
+                    <strong>Traffic Sign Detection with GUI:</strong>
+                    <br>
+                    An intelligent system that recognizes traffic signs in real-time using computer vision. Developed with Python, TensorFlow/Keras, and integrated into a graphical interface for easy usability.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="links">
+        <h2>Connect with Me</h2>
+        <a href="https://linkedin.com/in/pranay-nampally-544412324" target="_blank">LinkedIn</a>
+        <a href="https://github.com/2310030224-PranayVarma" target="_blank">GitHub</a>
+    </section>
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.onclick = function() {
+            document.body.classList.toggle('dark');
+        };
+
+        // Collapsible sections
+        const collapsibles = document.querySelectorAll('.collapsible');
+        collapsibles.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                btn.classList.toggle('active');
+                const content = btn.nextElementSibling;
+                content.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
